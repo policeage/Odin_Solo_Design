@@ -69,3 +69,10 @@ table {
     *zoom: 1;
 }
 /* Flex box */
+body {
+	background: center / contain no-repeat url("../images/FFXIV-background.png"), #1f2937;
+}
+.header-main {
+	display: flex;
+	justify-content: space-between;
+}
