@@ -68,11 +68,235 @@ table {
     clear: both;
     *zoom: 1;
 }
-/* Flex box */
-body {
-	background: center / contain no-repeat url("../images/FFXIV-background.png"), #1f2937;
+/* Typography */
+
+h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color: #F9FAF8;
 }
-.header-main {
+
+h3.logo {
+	font-size: 24px;
+	color: #F9FAF8;
+}
+
+a, p, li {
+	text-decoration: none;
+	color: #e5e7eb;
+	font-size: 18px;
+}
+
+button {
+	background-color: #3882F6;
+	color: #eee;
+	max-width: 100px;
+	max-height: 25px;
+	border-radius: 15px;
+	border: solid;
+	border-width: 3px;
+	border-color: #eee;
+}
+
+div.quote-item > h2 {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 100;
+	color: #eee;
+}
+
+div.info-head > h2 {
+	font-size: 36px;
+	font-weight: 400;
+	color: #eee
+}
+
+div.sign-up > h3 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #eee;
+}
+/* Flex box */
+
+body {
+	background:  no-repeat url("../images/FFXIV-background.png"), #1f2937;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	flex: 1;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	background-color: #1f2937;
+	padding: 20px 0;
+}
+
+.left {
+	display: flex;
+	justify-content: center;
+}
+
+.right {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	gap: 18px;
+}
+
+li {
+	list-style: none;
+	display: flex;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1f2937;
+	margin-top: 30px;
+	max-height: 100px;
+	flex: 0 0 100px;
+}
+
+
+
+/* Intro */
+
+.container-intro {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 18px;
+	gap: 18px;
+}
+
+.introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	gap: 18px;
+	margin-left: 18px;
+	padding: 20px;
+	background-color: #1f2937;
+}
+
+div.image {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	flex: 1 0 auto;
+}
+cite {
+	display: flex;
+	justify-content: right;
+	background-color: #1f2937;
+}
+
+/* Information */
+
+.container-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	margin: 20px 0px;
+}
+
+.info-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00000036;
+	border-top: solid;
+	border-bottom: solid;
+	border-color: #e5e7eb;
+	border-width: 3px;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	margin-top: 18px;
+}
+
+div.card {
+	max-width: 330px;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-color: #0000008b;
+}
+
+img.image {
+	max-width: 300px;
+	flex: 1 0 auto;
+	border-radius: 30px;
+	border-color: #e5e7eb;
+	border-width: 3px;
+}
+
+/* Quote */
+
+.container-quote {
+	display: flex;
+	justify-content: center;
+}
+
+.quote {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.quote-item {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000000;
+	max-width: 800px;
+	background: #000000ac;
+}
+.quote-right {
+	display: flex;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000000;
+	max-width: 800px;
+	background: #000000ac;
+}
+
+/* Sign Up */
+
+.sign-up-container {
+	display: flex;
+	justify-content: center;
+	background-color: #1f2937;
+	margin: 30px;
+	padding: 15px;
+	border-radius: 30px;
+	gap: 70px;
+}
+
+.sign-up {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 30px 0px;
+	gap: 15px;
+}
+
+.sign-up-button {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
